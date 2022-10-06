@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node --skip-project src/app.ts",
-    "test": "jest"
+    "test": "jest  --collect-coverage"
   },
   "author": "Mateusz Wojczal <mateusz@wojczal.com>",
   "license": "ISC",
@@ -15,7 +15,9 @@
     "@types/node-fetch": "2.x",
     "@types/supertest": "^2.0.12",
     "express": "^4.18.1",
+    "fetch-mock-jest": "^1.5.1",
     "jest": "^29.1.2",
+    "jest-mock": "^29.1.2",
     "node-fetch": "^2",
     "supertest": "^6.3.0",
     "ts-jest": "^29.0.3",

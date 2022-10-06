@@ -24,14 +24,7 @@ export const downloadAndConvert = async (
   amount: number
 ) => {
   const list = await fetchCurrencies();
-  const fromCurr: Currency = list[from];
-  const toCurr: Currency = list[to];
-
-  console.log(`from 1 ${from} =  ${fromCurr.inverseRate} USD`);
-
-  // convert to dolars
-
-  return fromCurr.inverseRate * toCurr.rate * amount;
+  return convert(list, from, to, amount);
 };
 
 export const convert = (
@@ -40,5 +33,9 @@ export const convert = (
   to: CurrencyCode,
   amount: number
 ): number => {
-  return 1;
+  const fromCurrInverseRate: number =
+    from === "usd" ? 1 : list[from].inverseRate; // note ternary here and CC
+  const toCurrRate: number = to === "usd" ? 1 : list[to].rate; // note ternary here and CC
+
+  return fromCurrInverseRate * toCurrRate * amount;
 };
