@@ -11,13 +11,24 @@ app.get("/convert/:from/:to/:amount", async (req, res) => {
     to as Currency["code"],
     Number(amount)
   );
-  const response = {
+
+  if (result === -1) {
+    return res.json({
+      from,
+      to,
+      amount,
+      result,
+      errorCode: "outOfRange",
+      errorMessage: "amount in USD our or range",
+    });
+  }
+
+  return res.json({
     from,
     to,
     amount,
     result,
-  };
-  res.json(response);
+  });
 });
 
 const server = app.listen(port, () => {

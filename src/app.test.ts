@@ -52,6 +52,15 @@ describe("conversion endpoint", () => {
         expect(response.body.result).toBe(100);
       });
   });
+
+  test("converting out of range amount", async () => {
+    await request(app)
+      .get("/convert/usd/usd/0")
+      .expect(200)
+      .then((response) => {
+        expect(response.body.result).toBe(-1);
+      });
+  });
 });
 
 beforeAll(() => {});
