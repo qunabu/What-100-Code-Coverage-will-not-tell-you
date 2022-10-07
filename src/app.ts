@@ -11,7 +11,13 @@ app.get("/convert/:from/:to/:amount", async (req, res) => {
     to as Currency["code"],
     Number(amount)
   );
-  res.send(`Conversion result is ${result.toFixed(2)}`);
+  const response = {
+    from,
+    to,
+    amount,
+    result,
+  };
+  res.json(response);
 });
 
 const server = app.listen(port, () => {
