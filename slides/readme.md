@@ -22,21 +22,21 @@ Mateusz Wojczal 2022
 
 In the context of software or information modeling, a **happy path** (sometimes called happy flow) is a default scenario featuring no exceptional or error conditions.
 
-Solution - Write tests for Unhappy path
+Solution - Write tests for `Unhappy path`
 
 ---
 
 # Coverage reports are easy to trick
 
-Possible solution **Defensive programming** - a form of defensive design intended to develop programs that are capable of detecting potential security abnormalities and make predetermined responses. It ensures the continuing function of a piece of software under unforeseen circumstances.
+Possible solution `Defensive programming` - a form of defensive design intended to develop programs that are capable of detecting potential security abnormalities and make predetermined responses. It ensures the continuing function of a piece of software under unforeseen circumstances.
 
 ---
 
-# Edge cases
+# Edge, Corner cases
 
 An edge case is a problem or situation that occurs only at an extreme (maximum or minimum) operating parameter.
 
-Write tests for Edge Cases. Run run application in extreme condition, eg stress testing.
+Write tests for `Edge Cases`. Run run application in extreme condition, eg stress testing.
 
 ---
 
@@ -44,7 +44,7 @@ Write tests for Edge Cases. Run run application in extreme condition, eg stress 
 
 Solution. Acceptance testing, a testing technique performed to determine whether or not the software system has met the requirement specifications.
 
-Example. BDD (Behavior-driven development), Gherkin language, e2e (end-to-end) tests
+Example. `BDD` (Behavior-driven development), `Gherkin` language, `e2e` (end-to-end) tests
 
 ---
 
@@ -52,7 +52,7 @@ Example. BDD (Behavior-driven development), Gherkin language, e2e (end-to-end) t
 
 This is especially true if you write tests after you've already written the code (Reversed TDD). You might find a method that hasn't been tested properly, so you write a test for it.
 
-Solution - TDD (Test-driven development)
+Solution - `TDD` (Test-driven development)
 
 ---
 
@@ -62,7 +62,7 @@ Solution - TDD (Test-driven development)
 
 — Well it doesn't have a nose... but it definitely can stink!
 
-Solution - Linters like eslint, sonarqube, codeclimate, etc...
+Solution - Linters like `eslint`, `sonarqube`, `codeclimate`, etc...
 
 ---
 
@@ -70,7 +70,13 @@ Solution - Linters like eslint, sonarqube, codeclimate, etc...
 
 Solution - `SAST` (Static application security testing), and `DAST` (Dynamic application security testing) tools like OWASP ZAP Fuzz might help
 
+---
+
 # Questions ?
+
+<iframe src="https://giphy.com/embed/26uf9wbBnV2eppZ4c" width="480" height="338" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+Fine me at:
 
 - https://www.linkedin.com/in/mateusz-wojczal/
 - https://mateusz.wojczal.com/
