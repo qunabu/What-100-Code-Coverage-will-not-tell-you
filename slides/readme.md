@@ -30,6 +30,16 @@ Solution - Write tests for `Unhappy path`
 
 Possible solution `Defensive programming` - a form of defensive design intended to develop programs that are capable of detecting potential security abnormalities and make predetermined responses. It ensures the continuing function of a piece of software under unforeseen circumstances.
 
+```ts
+import assert from "node:assert";
+
+const dispenseBeer = (age: number) => {
+  assert(typeof age === "number");
+  assert(age >= 18);
+  //...
+};
+```
+
 ---
 
 # Edge, Corner cases
