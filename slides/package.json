@@ -1,0 +1,13 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "reveal.js": "^4.1.0",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "start": "serve"
+  }
+}
