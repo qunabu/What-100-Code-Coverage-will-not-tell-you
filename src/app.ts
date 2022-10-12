@@ -40,7 +40,7 @@ app.get("/convert/:from/:to/:amount", async (req, res) => {
       amount,
       result,
       errorCode: "outOfRange",
-      errorMessage: "amount in USD our or range",
+      errorMessage: "amount in USD out of range",
     });
   }
 
